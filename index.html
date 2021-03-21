@@ -10,9 +10,14 @@
     <head> 
         <!-- title for HTML page (shown in browser bar/page tab)-->
         <title> Cat's First Website </title> 
+        <!-- internal CSS -->
+        <style>
+            body{background-color:powderblue}
+            h1  {color:blueviolet}
+        </style>
     </head>
 
-    <body style = "background-color:powderblue;">
+    <body>
         <!-- defines large heading -->
         <!-- there are 6 headings from <h1> to <h6>, most to least important -->
         <h1>Hello World</h1> 
@@ -21,7 +26,17 @@
         <p style = "text-align:center;"> Cat is currently learning how to make her own website</p> 
         
         <!-- link's destination is specified in href attribute -->
-        <a href = "https://youtu.be/dfl9KIX1WpU">Links can be inserted like this<br> </a>
+        <!-- 
+            changes where to open linked document:
+            _self - opens in the same window/tab
+            _blank - opens in new window/tab
+            _parent - opens in parent frame 
+            _top - opens in full body of window
+
+            _parent and _top only work in frames? frames were obsolete until HTML5 brought it back
+        -->
+        <a href = "https://youtu.be/dfl9KIX1WpU" target = "_blank">Links can be inserted like this. Let's Dingga!<br> </a>
+        
 
         <!-- places a horizontal rule/line on the page-->
         <hr>
@@ -92,10 +107,42 @@ ooooooooooooooo
 
         -->
 
-        
+        <!-- 
+            CSS can be aded to HTML in 3 ways
+            inline - using style (used in current doc)
+            internal - using <style> in the <head> section (used in current doc) 
+            external - using <link> to link to an external CSS file (will use in future docs)
+        -->
 
+        <!-- 
+            External CSS code:
+            HTML: 
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <link rel="stylesheet" href="styles.css">
+                </head>
+                <body>
 
+                <h1>This is a heading</h1>
+                <p>This is a paragraph.</p>
 
+                </body>
+                </html>
+
+            CSS:
+                body {
+                    background-color: powderblue;
+                }
+                h1 {
+                    color: blue;
+                }
+                p {
+                    color: red;
+                }
+        -->
+
+        <!-- -->
 
     </body>
 </html>
