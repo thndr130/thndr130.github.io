@@ -36,14 +36,29 @@
             _parent and _top only work in frames? frames were obsolete until HTML5 brought it back
         -->
         <a href = "https://youtu.be/dfl9KIX1WpU" target = "_blank" title = "MAMAMOO Dingga">Links can be inserted like this. Let's Dingga!<br> </a>
-        
+        <!-- link to jump to bookmark -->
+        <!-- to to link to a bookmark on another page, just add the html doc before #-->
+        <a href = "#bkm1">Jump to bookmark1</a>
 
         <!-- places a horizontal rule/line on the page-->
         <hr>
 
         <!--  src = source file, alt = alternative text -->
         <!-- to use an image as a link, put <img> inside the <a> tag -->
+        <!-- 
+            better to use style attribute, so the attributes don't get overwritten
+            example:
+            <img src = "cats.jpg" alt = "2 cats looking at you" style= "width:400px; height:400px;"> 
+        -->
         <img src = "cats.jpg" alt = "2 cats looking at you" width = "400" height = "400"> 
+        <p>
+            <a>
+                <img src = "mmm.jpg" alt = "4 hot women LOL" style = " float:right; width:400px; height:400px;">
+            </a>
+            The 4 ladies of 
+            <a href = "https://en.wikipedia.org/wiki/Mamamoo" target = "_blank" title = "MAMAMOO">MAMAMOO</a> 
+            , one of the most talented girl groups in the world. 
+        </p>
 
         <p style = "color:blue; font-family:comic sans ms; font-size:60px;">
             <!-- line break, does NOT need ending element --> 
@@ -161,7 +176,12 @@ ooooooooooooooo
             <button onclick = "document.location = 'default.asp' "> Name </button>
         -->
 
-
+        <!-- create a bookmark, add a link, autoscrolls to link on page-->
+        <p id = "bkm1">Bookmark1
+            I don't have a long ass website but in the future if I do make one that needs this
+            I can use a bookmark
+            and it autoscrolls to the bookmark
+        </p>
 
 
 
