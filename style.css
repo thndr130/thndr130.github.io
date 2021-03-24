@@ -64,3 +64,203 @@
         outline:none;
     }
 */
+
+/* universal selector is * */
+
+/* 
+    cascading order:
+    when more than 1 style is defined:
+    highest priority is: inline style (inside HTML doc)
+    2nd: external and internal style sheets (in head section)
+    3rd: browser default
+*/
+
+/*
+    backgrounds:
+    backround-color
+        opacity: 0 - 1 
+    background-image
+    background-repeat
+        no-repeat
+    background-attachment
+        scroll or fixed
+    background-position
+*/    
+
+/*
+    border-style
+        dotted
+        dashed
+        solid
+        double
+        grooze
+        ridge
+        inset
+        outset
+        none
+        hidden
+    border-width
+        (can defined anywhere from 1-4 values
+    border-radius
+*/
+
+/*
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+    values:
+        auto
+        (length in px, pt, cm, etc ...)
+        %
+        inherit
+    negative values are allowed
+*/
+
+/*
+    padding-top
+    padding-right
+    padding-bottom
+    padding-left
+    values:
+        length in px,pt,cm, etc...
+        %
+        inherit
+    box-sizing: border-box
+*/
+
+/*
+    height
+    width
+    values:
+        auto (default)
+        length in px, cm, etc...
+        %
+        initial (default)
+        inherit
+    max-width
+    max-height
+    min-width
+    min-height
+/*
+
+/*
+    outline-style
+        dotted
+        dashed
+        solid
+        doulbe
+        groove
+        ridge
+        inset
+        outset
+        none
+        hidden
+    outline-color
+    outline-width
+    outline-offset
+*/
+
+/*
+    text-align
+        legth
+        right
+        center
+        justify
+    direction
+    unicode-bidi
+    vertical-align
+        top 
+        middle
+        bottom
+*/
+
+/*
+    text-decoration
+        non
+        overline
+        line-through
+        underline
+*/
+
+/*
+    text-transform (turns everything into upper/lower case or capitalize first letter of each word
+        uppercase
+        lowercase
+        capitalize
+    text-indent
+    letter-spacing
+    line-height
+    word-spacing
+    white-space
+        nowrap
+    text-shadow
+
+*/
+
+/*
+    font-family
+        should have several fonts as fallback for max compatibility
+        if more than one word, font name must be in quotes
+    best web safe fonts:
+        arial
+        verdana
+        helvetica
+        tahoma
+        trebuchet MS
+        times new roman
+        georgia
+        garamond
+        courier new
+        brush script MT
+
+    font-style
+        normla italic
+        oblique
+    font-weight
+        normal
+        bold
+    font-variant
+        normal
+        small-caps
+    font-size
+        px
+        em
+        vw (viewport)
+    can use google fonts too 
+*/
+
+/*
+    use font awesome to add icons to page: fontawesome.com 
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    can also use bootstrap glyphicons:
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    google icons:
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+*/
+
+/*
+    styling links:
+        color
+        font-family
+        background
+        etc ...
+    a:link 
+    a:visited 
+    a:hover 
+    a:active 
+*/
+
+/*
+    list-style-type
+        circle
+        square
+        upper-roman
+        lower-alpha
+    using image as list item marker
+        list-style-image: url('name');
+        list-style-position
+        list-style-type:none
+/*
